@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        p {
+            color: pink;
+        }
+        #main {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+        h1, h2 {
+            color: yellow;
+        }
+        * {
+            font-family: Arial;
+        }
+        div p {
+            font-size: 18px;
+        }
+        div > span {
+            color: pink;
+        }
+
+        h1 + p {
+            background-color: lightgray;
+        }
+        h2 ~ p {
+            border: 1px solid black;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: brown;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body id="main">
+
+    <h1>CSS Selectors</h1>
+    <p>This paragraph is styled using element selector.</p>
+
+    <h2 class="highlight">Simple Selectors</h2>
+    <p class="highlight">This uses class selector.</p>
+
+    <div>
+        <p>Descendant selector example.</p>
+        <span>Child selector example.</span>
+    </div>
+
+    <p>Adjacent sibling example.</p>
+
+    <h2>Combinator Selectors</h2>
+    <p>General sibling selector example.</p>
+
+    <a href="#">Hover over this link</a>
+    <br><br>
+
+    <input type="text" placeholder="Text field">
+    <input type="password" placeholder="Password field">
+
+</body>
+</html>
